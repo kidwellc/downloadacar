@@ -17,13 +17,10 @@
         </div>
         <br/><br/><br/><br/>
 
-        <div class="dropdown" style="padding-bottom:95px;">
-            <button id="yesBtn" class="dropbtn" style="border-style:ridge">
-            </button>
-            <div class="dropdown-content">
-                <a href="./car.rar">Direct Download</a>
-                <a href="./car.rar.torrent">Torrent</a>
-            </div>
+        <div style="border-style: ridge">
+            <a href="./car.rar">
+                <img id="imgRand" src="yes/yes_0.png" alt="I would">
+            </a>
         </div>
         <br/>
         <br/>
@@ -31,9 +28,7 @@
         <script>
             // random number between 0 and 5
             var numRand = Math.floor(Math.random()*6);
-            var img = document.createElement('img');
-            img.src = "./yes/yes_"+numRand+".png"
-            document.getElementById('yesBtn').appendChild(img);
+            document.getElementById("imgRand").src = "./yes/yes_"+numRand+".png";
         </script>
     </body>
 </html>
