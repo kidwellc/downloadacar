@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>You Wouldn't Download A Car</title>
+        <meta charset="UTF-8">
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body class="noselect" style="margin:auto;width: 99%;background-color:black;max-width: 1000px;text-align: center">
+        <img src="./would.jpg" alt="Would you download a car?" style="margin:auto;width: 99%;">
+        <!-- <img src="./wouldyou.png" style="margin:auto; width: 65%;"> -->
+        <br/><br/><br/><br/><br/>
+
+        <div style="border-style: ridge">
+            <a href="https://en.wikipedia.org/wiki/The_History_of_Little_Goody_Two-Shoes">
+                <img src="no.png" alt="I wouldn't">
+            </a>
+        </div>
+        <br/><br/><br/><br/>
+
+        <div class="dropdown" style="padding-bottom:95px;">
+            <button id="yesBtn" class="dropbtn" style="border-style:ridge">
+            </button>
+            <div class="dropdown-content">
+                <a href="./car.rar">Direct Download</a>
+                <a href="./car.rar.torrent">Torrent</a>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <script>
+            // random number between 0 and 5
+            var numRand = Math.floor(Math.random()*6);
+            var img = document.createElement('img');
+            img.src = "./yes/yes_"+numRand+".png"
+            document.getElementById('yesBtn').appendChild(img);
+        </script>
+    </body>
+</html>
