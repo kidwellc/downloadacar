@@ -49,15 +49,13 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+/* 
 .dropdown:hover .dropbtn {
-}
+} */
 
-
-#iWouldNot,
-#iWould {
+.choice {
     font-family: 'XBAND-Rough';
-    color: white;
+    color: white; 
     font-size: 75pt;
     font-weight: 500;
     text-decoration: none;
